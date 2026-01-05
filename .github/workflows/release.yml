@@ -51,5 +51,5 @@ jobs:
             See the [full changelog](https://github.com/${{ github.repository }}/compare/${{ github.event.before }}...${{ github.ref_name }})
           draft: false
           files: |
-            builds/netsells.phar
+            builds/netsells
           token: ${{ secrets.GITHUB_TOKEN }}

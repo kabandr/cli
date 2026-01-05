@@ -11,6 +11,11 @@
 |
 */
 
+// Suppress PHP 8.5 deprecation warnings from Laravel/Illuminate components
+// These are harmless warnings about nullable types that will be 
+// fixed in future Laravel versions
+error_reporting(error_reporting() & ~E_DEPRECATED);
+
 $app = new LaravelZero\Framework\Application(
     dirname(__DIR__)
 );
